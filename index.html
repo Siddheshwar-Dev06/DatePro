@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ice Cream Date 🍦</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="sparkle">✦ ✧ ✦</div>
+
+        <p class="tag">A LITTLE INVITATION FOR YOU</p>
+
+        <h1>Ice Cream Date?</h1>
+
+        <img src="icecream.gif"
+             alt="Cute ice cream animation"
+             class="icecream">
+
+        <h2>Hey, you! 🍓</h2>
+
+        <p class="message">
+            I've got a sweet idea!
+
+            How about ice cream, cute conversations,
+            and making some lovely memories together?
+        </p>
+
+        <div class="details">
+            <p>🍦 Destination: Your favourite ice cream cafe</p>
+            <p>📅 Date: Let's decide together</p>
+            <p>⏰ Time: Whenever you're free</p>
+        </div>
+
+        <h3>So, what do you say?</h3>
+
+        <div class="buttons">
+
+            <button id="yesBtn">
+                Yes! Let's go 🍦
+            </button>
+
+            <button id="maybeBtn">
+                Maybe later
+            </button>
+
+        </div>
+
+        <!-- YES RESPONSE -->
+
+        <div id="yesResponse" class="response hidden">
+
+            <h2>I love you, babe! ❤️</h2>
+
+            <div class="big-heart">❤️ 💗 ❤️</div>
+
+            <p>
+                Yayyy! Our sweet little ice cream date
+                is officially in the making!
+            </p>
+
+            <p>
+                Now let's plan our special day together. 🍦
+            </p>
+
+        </div>
+
+        <!-- MAYBE RESPONSE -->
+
+        <div id="maybeResponse" class="response hidden">
+
+            <h2>Aww, no worries! 🍓</h2>
+
+            <p>
+                The invitation stays open.
+                Let me know whenever you're free!
+            </p>
+
+            <p>There's always room for ice cream. 🍨</p>
+
+        </div>
+
+        <!-- DATE PLANNER -->
+
+        <div id="datePlanner" class="planner hidden">
+
+            <h2>Let's Plan Our Date! 💌</h2>
+
+            <p class="planner-subtitle">
+                Fill in our sweet little date details.
+            </p>
+
+            <form id="dateForm">
+
+                <label for="date">Choose Date</label>
+
+                <input type="date"
+                       id="date"
+                       required>
+
+                <label for="time">Choose Time</label>
+
+                <input type="time"
+                       id="time"
+                       required>
+
+                <label for="cafe">Cafe Name</label>
+
+                <input type="text"
+                       id="cafe"
+                       placeholder="e.g. Your favourite ice cream cafe"
+                       required>
+
+                <label for="location">Cafe Location / Address</label>
+
+                <input type="text"
+                       id="location"
+                       placeholder="Enter cafe address or area"
+                       required>
+
+                <label for="mapLink">Google Maps Link (Optional)</label>
+
+                <input type="url"
+                       id="mapLink"
+                       placeholder="Paste Google Maps link">
+
+                <label for="note">A Little Note (Optional)</label>
+
+                <textarea id="note"
+                          placeholder="Anything special for our date?"></textarea>
+
+                <button type="submit" class="save-btn">
+                    Save Our Date ❤️
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- FINAL DATE DETAILS -->
+
+        <div id="dateSummary" class="summary hidden">
+
+            <h2>Our Ice Cream Date! 🍦</h2>
+
+            <div class="summary-card">
+
+                <p>❤️ <strong>Special Plan:</strong> Ice Cream Date</p>
+
+                <p>📅 <strong>Date:</strong> <span id="showDate"></span></p>
+
+                <p>⏰ <strong>Time:</strong> <span id="showTime"></span></p>
+
+                <p>🍨 <strong>Cafe:</strong> <span id="showCafe"></span></p>
+
+                <p>📍 <strong>Location:</strong> <span id="showLocation"></span></p>
+
+                <p id="noteRow" class="hidden">
+                    💌 <strong>Note:</strong>
+                    <span id="showNote"></span>
+                </p>
+
+            </div>
+
+            <a id="mapButton"
+               href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="map-button hidden">
+                Open Cafe Location 📍
+            </a>
+
+            <p class="final-text">
+                Can't wait for our sweet little adventure! ❤️
+            </p>
+
+            <button id="editBtn" class="edit-btn">
+                Edit Date Details
+            </button>
+
+        </div>
+
+        <footer>
+            Made with a little sweetness ♡
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
